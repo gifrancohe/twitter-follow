@@ -1,15 +1,11 @@
 import './App.css'
-import TwitterFollowCard from './TwitterFollowCard'
+import WhoToFollow from './WhoToFollow'
+import { people } from './assets/data'
 
 export default function App () {
   return (
     <section className='App'>
-      <TwitterFollowCard userName="gifrancohe">
-        Giovanny Franco Herrera
-      </TwitterFollowCard>
-      <TwitterFollowCard userName="midudev">
-        Miguel Angel Duran
-      </TwitterFollowCard>
+      <WhoToFollow followCardList={people} />
     </section>
   )
 }
